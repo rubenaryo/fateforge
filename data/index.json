@@ -1,0 +1,8 @@
+{
+  "schemas": [
+    { "id": "dnd5e", "name": "D&D 5e", "path": "schemas/dnd5e.json" }
+  ],
+  "datasets": [
+    { "id": "dnd5e-srd", "name": "D&D 5e (SRD-lite)", "path": "datasets/dnd5e-srd.json" }
+  ]
+}

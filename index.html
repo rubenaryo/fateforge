@@ -7,11 +7,26 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main>
+  <header>
     <h1>FateForge</h1>
     <p class="tagline">A character creation utility.</p>
-    <p class="status">Under construction.</p>
-  </main>
-  <script src="app.js"></script>
+  </header>
+
+  <section class="controls">
+    <label>
+      <span>Schema</span>
+      <select id="schema-select"></select>
+    </label>
+    <label>
+      <span>Dataset</span>
+      <select id="dataset-select"></select>
+    </label>
+    <button id="roll-btn" type="button">Roll</button>
+  </section>
+
+  <section id="sheet" class="sheet"></section>
+  <p id="status" class="status"></p>
+
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>

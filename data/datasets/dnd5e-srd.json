@@ -1,0 +1,95 @@
+{
+  "id": "dnd5e-srd",
+  "name": "D&D 5e (SRD-lite)",
+  "sources": {
+    "names": [
+      "Aldric", "Bryn", "Cora", "Doran", "Elyra", "Fenn", "Gwyn", "Hale",
+      "Ivor", "Jora", "Kell", "Lira", "Marek", "Nyx", "Orin", "Pell",
+      "Quen", "Rhea", "Soren", "Tam", "Uhl", "Vex", "Wren", "Xara",
+      "Ysolde", "Zane", "Brannon", "Cael", "Dain", "Esen"
+    ],
+    "races": [
+      "Human", "Elf", "Dwarf", "Halfling", "Dragonborn",
+      "Gnome", "Half-Elf", "Half-Orc", "Tiefling"
+    ],
+    "classes": [
+      "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
+      "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"
+    ],
+    "backgrounds": [
+      "Acolyte", "Charlatan", "Criminal", "Entertainer", "Folk Hero",
+      "Guild Artisan", "Hermit", "Noble", "Outlander", "Sage",
+      "Sailor", "Soldier", "Urchin"
+    ],
+    "alignments": [
+      "Lawful Good", "Neutral Good", "Chaotic Good",
+      "Lawful Neutral", "True Neutral", "Chaotic Neutral",
+      "Lawful Evil", "Neutral Evil", "Chaotic Evil"
+    ],
+    "skills": [
+      "Acrobatics", "Animal Handling", "Arcana", "Athletics",
+      "Deception", "History", "Insight", "Intimidation",
+      "Investigation", "Medicine", "Nature", "Perception",
+      "Performance", "Persuasion", "Religion", "Sleight of Hand",
+      "Stealth", "Survival"
+    ],
+    "weapons": [
+      "Longsword", "Shortsword", "Rapier", "Greataxe", "Warhammer",
+      "Dagger", "Handaxe", "Mace", "Quarterstaff", "Battleaxe",
+      "Shortbow", "Longbow", "Light Crossbow", "Sling"
+    ],
+    "armor": [
+      "Padded", "Leather", "Studded Leather", "Hide", "Chain Shirt",
+      "Scale Mail", "Breastplate", "Chainmail", "Splint", "Plate",
+      "Shield"
+    ],
+    "items": [
+      "Backpack", "Bedroll", "Rations (5 days)", "Rope (50 ft)",
+      "Lantern", "Waterskin", "Tinderbox", "Grappling Hook",
+      "Healer's Kit", "Component Pouch", "Holy Symbol",
+      "Thieves' Tools", "Spellbook", "Musical Instrument"
+    ],
+    "personalities": [
+      "Speaks in blunt, unvarnished truths, no matter the audience.",
+      "Cannot resist a wager, however trivial the stakes.",
+      "Quietly cataloguing every debt owed and every one repaid.",
+      "Finds humor in the grim and gravity in the small.",
+      "Always the first to volunteer and the last to explain why.",
+      "Suspicious of kindness until it's been repeated at least three times.",
+      "Talks to weapons, tools, or animals as if they answer back.",
+      "Keeps a small keepsake and refuses to say what it means.",
+      "Prefers silence to conversation, but listens more than most.",
+      "Never sits with their back to a door."
+    ],
+    "ideals": [
+      "Freedom. Chains of any kind must be broken.",
+      "Knowledge. Every question deserves the honest answer.",
+      "Duty. The oath spoken is the oath kept.",
+      "Beauty. The world is worth preserving for its own sake.",
+      "Power. Strength decides who writes the story.",
+      "Fairness. Rules apply to the strong first, or not at all.",
+      "Change. Nothing sacred should outlast its usefulness.",
+      "Community. No one stands alone if they don't have to."
+    ],
+    "bonds": [
+      "Owes a life-debt they can never fully repay.",
+      "Carries a letter they cannot bear to deliver.",
+      "Sworn to a mentor whose fate remains unknown.",
+      "A hometown they left burning behind them.",
+      "A sibling who took a very different path.",
+      "A found family scattered across a dozen roads.",
+      "A relic that must be returned to where it belongs.",
+      "A promise made to a stranger who saved their life."
+    ],
+    "flaws": [
+      "Cannot walk away from a fight they've been challenged to.",
+      "Trusts appearances over evidence far too readily.",
+      "Hoards small things obsessively — coins, buttons, teeth.",
+      "Freezes when confronted with authority figures.",
+      "Cannot keep a secret longer than a single drink.",
+      "Sees betrayal in every unexpected kindness.",
+      "Refuses to sleep in unfamiliar beds.",
+      "Blames themselves for events beyond their control."
+    ]
+  }
+}
