@@ -10,7 +10,7 @@
     "attributes": {
       "type": "group",
       "children": {
-        "STR": { "type": "roll", "min": 8, "max": 18 },
+        "STR": { "type": "roll", "min": -2, "max": 3 },
         "DEX": { "type": "roll", "min": 8, "max": 18 },
         "CON": { "type": "roll", "min": 8, "max": 18 },
         "INT": { "type": "roll", "min": 8, "max": 18 },
