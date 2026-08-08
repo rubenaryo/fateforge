@@ -137,9 +137,12 @@ h1 {
   color: var(--fg);
 }
 
-.status {
-  color: #e07070;
+.warning {
+  background: #2e1f1f;
+  border: 1px solid #7a3535;
+  color: #e09090;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
   font-size: 0.9rem;
-  text-align: center;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

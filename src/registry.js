@@ -1,21 +1,35 @@
-// Loads the registry and named schemas/datasets from /data.
+const SCHEMA_ROOT  = "data/schemas";
+const DATASET_ROOT = "data/datasets";
+const INDEX_PATH   = "data/index.json";
 
-const DATA_ROOT = "data";
-
-async function fetchJson(path) {
-  const res = await fetch(`${DATA_ROOT}/${path}`);
-  if (!res.ok) throw new Error(`Failed to fetch ${path}: ${res.status}`);
+async function fetchJson(url) {
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to fetch ${url}: ${res.status}`);
   return res.json();
 }
 
+// Returns { schemas: [...], datasets: [...] } with each entry fully loaded.
 export async function loadRegistry() {
-  return fetchJson("index.json");
+  const index = await fetchJson(INDEX_PATH);
+
+  const [schemas, datasets] = await Promise.all([
+    Promise.all(index.schemas.map((f) => fetchJson(`${SCHEMA_ROOT}/${f}`))),
+    Promise.all(index.datasets.map((f) => fetchJson(`${DATASET_ROOT}/${f}`))),
+  ]);
+
+  return { schemas, datasets };
 }
 
-export async function loadSchema(entry) {
-  return fetchJson(entry.path);
+function collectSources(fields, out = []) {
+  for (const spec of Object.values(fields ?? {})) {
+    if (spec.source) out.push(spec.source);
+    if (spec.children) collectSources(spec.children, out);
+  }
+  return out;
 }
 
-export async function loadDataset(entry) {
-  return fetchJson(entry.path);
+export function missingSourceKeys(schema, dataset) {
+  const required = collectSources(schema.fields);
+  const available = new Set(Object.keys(dataset.sources ?? {}));
+  return [...new Set(required)].filter((k) => !available.has(k));
 }

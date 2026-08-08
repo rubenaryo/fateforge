@@ -1,0 +1,35 @@
+{
+  "id": "scifi",
+  "name": "Sci-Fi",
+  "fields": {
+    "name":       { "type": "pick", "source": "names" },
+    "species":    { "type": "pick", "source": "species" },
+    "role":       { "type": "pick", "source": "roles" },
+    "origin":     { "type": "pick", "source": "origins" },
+    "faction":    { "type": "pick", "source": "factions" },
+    "attributes": {
+      "type": "group",
+      "children": {
+        "PHY": { "type": "roll", "min": 4, "max": 12 },
+        "REF": { "type": "roll", "min": 4, "max": 12 },
+        "INT": { "type": "roll", "min": 4, "max": 12 },
+        "WIL": { "type": "roll", "min": 4, "max": 12 },
+        "CHA": { "type": "roll", "min": 4, "max": 12 },
+        "TEC": { "type": "roll", "min": 4, "max": 12 }
+      }
+    },
+    "skills": { "type": "pickMany", "source": "skills", "count": 4 },
+    "augmentations": { "type": "pickMany", "source": "augmentations", "count": 2 },
+    "loadout": {
+      "type": "group",
+      "children": {
+        "primary":   { "type": "pick", "source": "weapons" },
+        "sidearm":   { "type": "pick", "source": "sidearms" },
+        "gear":      { "type": "pick", "source": "gear" }
+      }
+    },
+    "personality": { "type": "pick", "source": "personalities" },
+    "motivation":  { "type": "pick", "source": "motivations" },
+    "secret":      { "type": "pick", "source": "secrets" }
+  }
+}
