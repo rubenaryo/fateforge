@@ -1,0 +1,35 @@
+{
+  "id": "dreg",
+  "name": "DREG",
+  "fields": {
+    "name":       { "type": "pick", "source": "names" },
+    "race":       { "type": "pick", "source": "races" },
+    "class":      { "type": "pick", "source": "classes" },
+    "background": { "type": "pick", "source": "backgrounds" },
+    "alignment":  { "type": "pick", "source": "alignments" },
+    "attributes": {
+      "type": "group",
+      "children": {
+        "STR": { "type": "roll", "min": -2, "max": 3 },
+        "DEX": { "type": "roll", "min": 8, "max": 18 },
+        "CON": { "type": "roll", "min": 8, "max": 18 },
+        "INT": { "type": "roll", "min": 8, "max": 18 },
+        "WIS": { "type": "roll", "min": 8, "max": 18 },
+        "CHA": { "type": "roll", "min": 8, "max": 18 }
+      }
+    },
+    "skills": { "type": "pickMany", "source": "skills", "count": 4 },
+    "equipment": {
+      "type": "group",
+      "children": {
+        "weapon": { "type": "pick", "source": "weapons" },
+        "armor":  { "type": "pick", "source": "armor" },
+        "item":   { "type": "pick", "source": "items" }
+      }
+    },
+    "personality": { "type": "pick", "source": "personalities" },
+    "ideal":       { "type": "pick", "source": "ideals" },
+    "bond":        { "type": "pick", "source": "bonds" },
+    "flaw":        { "type": "pick", "source": "flaws" }
+  }
+}
