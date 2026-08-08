@@ -1,0 +1,85 @@
+{
+  "id": "scifi-core",
+  "name": "Sci-Fi Core",
+  "sources": {
+    "names": [
+      "Arix", "Bael", "Cynn", "Drax", "Eura", "Fyke", "Gora", "Hael",
+      "Ikto", "Juryn", "Kess", "Lyra", "Mace", "Noor", "Oryn", "Paxe",
+      "Quil", "Ryss", "Saye", "Tove", "Ulux", "Varn", "Wex", "Xien",
+      "Yael", "Zuri", "Bren", "Cael", "Dryn", "Esse"
+    ],
+    "species": [
+      "Human", "Synthborn", "Veldrian", "Cruxan", "Nullkin",
+      "Ashwalker", "Hivebound", "Deepborn", "Shiftkin", "Exo-Adapted"
+    ],
+    "roles": [
+      "Operative", "Engineer", "Medic", "Pilot", "Hacker",
+      "Scout", "Negotiator", "Soldier", "Smuggler", "Archivist"
+    ],
+    "origins": [
+      "Core Worlds", "Outer Rim Colony", "Station-Born", "War Zone Survivor",
+      "Corporate Lab", "Derelict Salvage", "Frontier Settlement",
+      "Prison Fleet Escapee", "Generation Ship Descendant", "Unknown"
+    ],
+    "factions": [
+      "Free Worlds Coalition", "Dominion Protectorate", "The Syndicate",
+      "Void Church", "Meridian Corp", "Reclaimers", "Unaligned", "Ghost Cell"
+    ],
+    "skills": [
+      "Piloting", "Hacking", "Medtech", "Combat", "Stealth",
+      "Persuasion", "Engineering", "Navigation", "Surveillance",
+      "Xenobiology", "Demolitions", "Cryptography", "Zero-G Movement",
+      "Arms Dealing", "Infiltration", "Field Surgery"
+    ],
+    "augmentations": [
+      "Neural Uplink", "Subdermal Armor", "Reflex Boosters", "Ocular Implant",
+      "Lung Filter", "Synthetic Arm", "Memory Chip", "Pain Suppressor",
+      "Mag-Grip Hands", "Cloaking Mesh", "Exoskeleton Frame", "Vocal Modulator"
+    ],
+    "weapons": [
+      "Pulse Rifle", "Plasma Cutter", "Gauss Carbine", "Scatter Cannon",
+      "Arc Lance", "Kinetic SMG", "Disruptor Rifle", "Rail Sniper"
+    ],
+    "sidearms": [
+      "Holdout Blaster", "Shock Pistol", "Dart Gun", "Micro-Needler",
+      "Plasma Pistol", "EMP Grenade (x2)", "Vibroknife", "Stun Rod"
+    ],
+    "gear": [
+      "Medkit", "Hacking Rig", "Grav-Chute", "Breather Mask",
+      "Stealth Field Generator", "Thermal Cloak", "Signal Jammer",
+      "Portable Fabricator", "Climbing Harness", "Emergency Beacon"
+    ],
+    "personalities": [
+      "Talks too much when nervous. Silent when afraid.",
+      "Has memorized the fastest exit from any room within thirty seconds of entering.",
+      "Refuses to use a weapon they haven't personally inspected.",
+      "Collects trinkets from every world they've visited; won't say why.",
+      "Laughs at the wrong moments. Always apologizes after.",
+      "Keeps a meticulous personal log. Encrypts it obsessively.",
+      "Distrust authority figures. Trust strangers more than they should.",
+      "Cannot stand waste — of resources, time, or people.",
+      "Operates best alone and will tell you so unprompted.",
+      "Finds comfort in machinery. People, less so."
+    ],
+    "motivations": [
+      "Looking for someone who doesn't want to be found.",
+      "Paying off a debt that keeps growing.",
+      "Running from a past they can't fully remember.",
+      "Trying to finish what someone else started.",
+      "Searching for a place that doesn't exist on any map.",
+      "Protecting the only thing they have left.",
+      "Proving they're more than what they were made to be.",
+      "Buying time until they figure out what they actually want."
+    ],
+    "secrets": [
+      "Their identity is entirely fabricated.",
+      "They witnessed something they were not supposed to survive.",
+      "They're being watched and know it, but not by whom.",
+      "A former ally is now hunting them.",
+      "They carry data someone powerful wants destroyed.",
+      "Their augmentations have a backdoor they haven't found yet.",
+      "They owe loyalty to two factions with opposing goals.",
+      "The accident that scarred them wasn't an accident."
+    ]
+  }
+}

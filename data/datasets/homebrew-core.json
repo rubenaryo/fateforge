@@ -1,0 +1,75 @@
+{
+  "id": "homebrew-core",
+  "name": "Homebrew Core",
+  "sources": {
+    "names": [
+      "Ash", "Briar", "Cael", "Dusk", "Emyr", "Fenn", "Gale", "Holt",
+      "Iress", "Jyn", "Kern", "Lore", "Myre", "Nael", "Oryn", "Pell",
+      "Quin", "Rael", "Sable", "Tael", "Uren", "Vex", "Wren", "Xael",
+      "Ysel", "Zael", "Auren", "Brynn", "Cress", "Daen"
+    ],
+    "lineages": [
+      "Ironblood", "Tidewarden", "Ashwalker", "Sunforged", "Rootkin",
+      "Voidborn", "Stormcalled", "Earthbound", "Shadowmere", "Flamechosen"
+    ],
+    "callings": [
+      "Wanderer", "Keeper", "Breaker", "Seeker", "Warden",
+      "Herald", "Binder", "Reaper", "Builder", "Speaker"
+    ],
+    "marks": [
+      "Marked by fire: something always burns nearby.",
+      "Marked by frost: breath fogs in all weathers.",
+      "Marked by shadow: their silhouette sometimes moves wrong.",
+      "Marked by tide: water finds them wherever they hide.",
+      "Marked by stone: scars look like cracks in rock.",
+      "Marked by wind: hair perpetually unsettled.",
+      "Marked by blood: wounds close fast but ache long.",
+      "Marked by void: their reflection is always a moment behind."
+    ],
+    "gifts": [
+      "Keen Senses", "Iron Constitution", "Quick Hands", "Shadow Step",
+      "Battle Instinct", "Wordless Empathy", "Forge Touch", "Wayfinding",
+      "Calm Under Fire", "Lucky", "Old Blood", "Mending Touch",
+      "Tongue of Beasts", "Hardened", "Relentless"
+    ],
+    "flaws": [
+      "Cannot refuse a direct challenge.",
+      "Keeps the wrong secrets for the wrong people.",
+      "Trusts their gut over all evidence to the contrary.",
+      "Cannot let a wrong go unanswered.",
+      "Hoards things they don't need.",
+      "Takes blame they don't deserve.",
+      "Flinches at kindness.",
+      "Speaks before they think, always."
+    ],
+    "weapons": [
+      "Short Blade", "Hunting Bow", "War Axe", "Spear", "Sling",
+      "Curved Sword", "Hammer", "Longknife", "Staff", "Crossbow"
+    ],
+    "tools": [
+      "Healer's Satchel", "Lockpicks", "Rope & Hook", "Foraging Kit",
+      "Map Case", "Signal Mirror", "Alchemy Flask", "Trapping Tools",
+      "Whetstone & Oil", "Lantern & Oil"
+    ],
+    "traits": [
+      "Speaks rarely; means everything they say.",
+      "Always knows which way is north.",
+      "Hums tunelessly when uneasy.",
+      "Keeps a tally of what they owe and what they're owed.",
+      "Wakes before dawn. Cannot explain why.",
+      "Collects stones from rivers they cross.",
+      "Has a tell when lying: touches their left wrist.",
+      "Names their equipment. Gets attached."
+    ],
+    "drives": [
+      "To repay a debt older than memory.",
+      "To find whatever was taken from them.",
+      "To protect something fragile from a world that isn't.",
+      "To earn a name worth passing down.",
+      "To reach the end of a road that keeps extending.",
+      "To undo one specific thing they did.",
+      "To find out if they were right about someone.",
+      "To outlast everyone who said they wouldn't."
+    ]
+  }
+}

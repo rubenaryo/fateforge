@@ -1,0 +1,30 @@
+{
+  "id": "homebrew",
+  "name": "Homebrew Fantasy",
+  "fields": {
+    "name":       { "type": "pick", "source": "names" },
+    "lineage":    { "type": "pick", "source": "lineages" },
+    "calling":    { "type": "pick", "source": "callings" },
+    "mark":       { "type": "pick", "source": "marks" },
+    "attributes": {
+      "type": "group",
+      "children": {
+        "BODY":  { "type": "roll", "min": 1, "max": 6 },
+        "MIND":  { "type": "roll", "min": 1, "max": 6 },
+        "SOUL":  { "type": "roll", "min": 1, "max": 6 },
+        "EDGE":  { "type": "roll", "min": 1, "max": 6 }
+      }
+    },
+    "gifts":  { "type": "pickMany", "source": "gifts",  "count": 2 },
+    "flaws":  { "type": "pickMany", "source": "flaws",  "count": 1 },
+    "gear": {
+      "type": "group",
+      "children": {
+        "weapon": { "type": "pick", "source": "weapons" },
+        "tool":   { "type": "pick", "source": "tools" }
+      }
+    },
+    "trait": { "type": "pick", "source": "traits" },
+    "drive": { "type": "pick", "source": "drives" }
+  }
+}
