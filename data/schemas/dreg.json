@@ -3,22 +3,21 @@
   "name": "DREG",
   "fields": {
     "name":       { "type": "pick", "source": "names" },
-    "race":       { "type": "pick", "source": "races" },
+    "form":       { "type": "pick", "source": "forms" },
+    "variant":       { "type": "pick", "source": "variants" },
     "class":      { "type": "pick", "source": "classes" },
     "background": { "type": "pick", "source": "backgrounds" },
     "alignment":  { "type": "pick", "source": "alignments" },
     "attributes": {
       "type": "group",
       "children": {
-        "STR": { "type": "roll", "min": -2, "max": 3 },
-        "DEX": { "type": "roll", "min": 8, "max": 18 },
-        "CON": { "type": "roll", "min": 8, "max": 18 },
-        "INT": { "type": "roll", "min": 8, "max": 18 },
-        "WIS": { "type": "roll", "min": 8, "max": 18 },
-        "CHA": { "type": "roll", "min": 8, "max": 18 }
+        "BODY": { "type": "roll", "min": -2, "max": 2 },
+        "REFLEX": { "type": "roll", "min": -2, "max":  2 },
+        "MIND": { "type": "roll", "min": -2, "max": 2 },
+        "INSTINCT": { "type": "roll", "min": -2, "max": 2 }
       }
     },
-    "skills": { "type": "pickMany", "source": "skills", "count": 4 },
+    "skills": { "type": "pickMany", "source": "skills", "count": 2 },
     "equipment": {
       "type": "group",
       "children": {

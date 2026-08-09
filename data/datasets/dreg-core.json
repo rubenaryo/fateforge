@@ -1,16 +1,19 @@
 {
   "id": "dreg",
-  "name": "D&D 5e (SRD-lite)",
+  "name": "dreg-core.json",
   "sources": {
     "names": [
-      "Aldric", "Bryn", "Cora", "Doran", "Elyra", "Fenn", "Gwyn", "Hale",
-      "Ivor", "Jora", "Kell", "Lira", "Marek", "Nyx", "Orin", "Pell",
-      "Quen", "Rhea", "Soren", "Tam", "Uhl", "Vex", "Wren", "Xara",
-      "Ysolde", "Zane", "Brannon", "Cael", "Dain", "Esen"
+      "Akal", "Bletch", "Cresk", "Felesh", "Dleev", "Sinyu","Arlok", "Sevrin",
+      "Secris", "Merrow", "Vrille", "Zedu", "Thudge", "Dagra", "Orrus","Helim", 
+      "Krypsis", "Rumina", "Zekris", "Coronea", "Poxul", "Retchus", "Scabrix",
+      "Haemos", "Reekus", "Harrix", "Ocula", "Keratus", "Sair", "Nion", "Avet",
+      "Unum", "Esaq", "Luov", "Telles", "Borrul"  
     ],
-    "races": [
-      "Human", "Elf", "Dwarf", "Halfling", "Dragonborn",
-      "Gnome", "Half-Elf", "Half-Orc", "Tiefling"
+    "variants": [
+      "Baseline","Spliced", "Symbiotic", "Symbiorg", "Blighted"
+    ],
+    "forms": [
+      "Denizen", "Dweller"
     ],
     "classes": [
       "Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
@@ -34,12 +37,12 @@
       "Stealth", "Survival"
     ],
     "weapons": [
-      "Longsword", "Shortsword", "Rapier", "Greataxe", "Warhammer",
+      "Longsword 5 Damage", "Shortsword", "Rapier", "Greataxe", "Warhammer",
       "Dagger", "Handaxe", "Mace", "Quarterstaff", "Battleaxe",
       "Shortbow", "Longbow", "Light Crossbow", "Sling"
     ],
     "armor": [
-      "Padded", "Leather", "Studded Leather", "Hide", "Chain Shirt",
+      "Padded", "Leather (2)", "Studded Leather", "Hide", "Chain Shirt",
       "Scale Mail", "Breastplate", "Chainmail", "Splint", "Plate",
       "Shield"
     ],
