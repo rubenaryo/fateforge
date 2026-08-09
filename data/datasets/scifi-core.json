@@ -37,12 +37,34 @@
       "Mag-Grip Hands", "Cloaking Mesh", "Exoskeleton Frame", "Vocal Modulator"
     ],
     "weapons": [
-      "Pulse Rifle", "Plasma Cutter", "Gauss Carbine", "Scatter Cannon",
-      "Arc Lance", "Kinetic SMG", "Disruptor Rifle", "Rail Sniper"
+      { "name": "Pulse Rifle", "stats": { "damage": "3d6 energy" },
+        "flavor": "Standard issue for a reason." },
+      { "name": "Plasma Cutter", "stats": { "damage": "2d8 thermal" },
+        "flavor": "A tool, technically.",
+        "requires": { "role": ["Engineer", "Smuggler", "Pilot"] } },
+      { "name": "Gauss Carbine", "stats": { "damage": "2d10 kinetic" },
+        "requires": { "role": ["Operative", "Soldier", "Scout"] } },
+      { "name": "Scatter Cannon", "stats": { "damage": "4d4 kinetic, close" },
+        "requires": { "role": ["Soldier", "Smuggler"] } },
+      { "name": "Arc Lance", "stats": { "damage": "2d8 electric" } },
+      { "name": "Kinetic SMG", "stats": { "damage": "2d6 kinetic" } },
+      { "name": "Disruptor Rifle", "stats": { "damage": "3d6 ion" },
+        "requires": { "role": ["Operative", "Hacker", "Soldier"] } },
+      { "name": "Rail Sniper", "stats": { "damage": "3d10 kinetic, long" },
+        "flavor": "One shot. Make it count.",
+        "requires": { "role": ["Operative", "Scout", "Soldier"] } }
     ],
     "sidearms": [
-      "Holdout Blaster", "Shock Pistol", "Dart Gun", "Micro-Needler",
-      "Plasma Pistol", "EMP Grenade (x2)", "Vibroknife", "Stun Rod"
+      { "name": "Holdout Blaster", "stats": { "damage": "1d6 energy" },
+        "flavor": "Fits in a boot. Ends arguments." },
+      { "name": "Shock Pistol", "stats": { "damage": "1d8 electric, stun" } },
+      { "name": "Dart Gun", "stats": { "damage": "1d4 + toxin" } },
+      { "name": "Micro-Needler", "stats": { "damage": "1d4 piercing, silent" } },
+      { "name": "Plasma Pistol", "stats": { "damage": "2d6 thermal" } },
+      { "name": "EMP Grenade (x2)", "stats": { "damage": "3d6 ion, area" } },
+      { "name": "Vibroknife", "stats": { "damage": "1d6 kinetic" },
+        "flavor": "Never needs reloading." },
+      { "name": "Stun Rod", "stats": { "damage": "1d8 stun" } }
     ],
     "gear": [
       "Medkit", "Hacking Rig", "Grav-Chute", "Breather Mask",
