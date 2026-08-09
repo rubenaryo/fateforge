@@ -3,11 +3,14 @@ import { rollCharacter } from "./roller.js";
 import { renderCharacter } from "./render.js";
 
 const els = {
-  schema:  document.getElementById("schema-select"),
-  dataset: document.getElementById("dataset-select"),
-  roll:    document.getElementById("roll-btn"),
-  sheet:   document.getElementById("sheet"),
-  warning: document.getElementById("warning"),
+  schema:    document.getElementById("schema-select"),
+  dataset:   document.getElementById("dataset-select"),
+  roll:      document.getElementById("roll-btn"),
+  sheet:     document.getElementById("sheet"),
+  warning:   document.getElementById("warning"),
+  logToggle: document.getElementById("log-toggle"),
+  logPanel:  document.getElementById("log-panel"),
+  logList:   document.getElementById("log-list"),
 };
 
 let registry = null;
@@ -43,10 +46,22 @@ function updateWarning() {
   }
 }
 
+function renderLog(lines) {
+  els.logList.replaceChildren(
+    ...lines.map((line) => {
+      const li = document.createElement("li");
+      li.textContent = line;
+      return li;
+    })
+  );
+}
+
 function roll() {
   if (!currentSchema || !currentDataset) return;
   updateWarning();
-  renderCharacter(rollCharacter(currentSchema, currentDataset), els.sheet);
+  const { character, log } = rollCharacter(currentSchema, currentDataset);
+  renderCharacter(character, els.sheet);
+  renderLog(log);
 }
 
 async function init() {
@@ -60,6 +75,9 @@ async function init() {
     els.schema.addEventListener("change",  () => { syncSelections(); roll(); });
     els.dataset.addEventListener("change", () => { syncSelections(); roll(); });
     els.roll.addEventListener("click", roll);
+    els.logToggle.addEventListener("click", () => {
+      els.logPanel.classList.toggle("open");
+    });
 
     roll();
   } catch (err) {

@@ -43,13 +43,32 @@
       "Speaks before they think, always."
     ],
     "weapons": [
-      "Short Blade", "Hunting Bow", "War Axe", "Spear", "Sling",
-      "Curved Sword", "Hammer", "Longknife", "Staff", "Crossbow"
+      { "name": "Short Blade", "stats": { "damage": "d6" } },
+      { "name": "Hunting Bow", "stats": { "damage": "d6, ranged" },
+        "flavor": "Feeds you before it defends you." },
+      { "name": "War Axe", "stats": { "damage": "d10" },
+        "requires": { "calling": ["Breaker", "Warden", "Reaper"] } },
+      { "name": "Spear", "stats": { "damage": "d8, reach" } },
+      { "name": "Sling", "stats": { "damage": "d4, ranged" } },
+      { "name": "Curved Sword", "stats": { "damage": "d8" },
+        "flavor": "Favored where dueling is an art." },
+      { "name": "Hammer", "stats": { "damage": "d8" } },
+      { "name": "Longknife", "stats": { "damage": "d6" },
+        "flavor": "Too long to be honest, too short to be proud." },
+      { "name": "Staff", "stats": { "damage": "d6" } },
+      { "name": "Crossbow", "stats": { "damage": "d8, ranged" } }
     ],
     "tools": [
-      "Healer's Satchel", "Lockpicks", "Rope & Hook", "Foraging Kit",
-      "Map Case", "Signal Mirror", "Alchemy Flask", "Trapping Tools",
-      "Whetstone & Oil", "Lantern & Oil"
+      { "name": "Healer's Satchel", "flavor": "Herbs, thread, and steady hands." },
+      { "name": "Lockpicks", "requires": { "calling": ["Seeker", "Breaker", "Wanderer"] } },
+      "Rope & Hook",
+      "Foraging Kit",
+      { "name": "Map Case", "flavor": "Half the maps are wrong. Which half?" },
+      "Signal Mirror",
+      { "name": "Alchemy Flask", "requires": { "calling": ["Binder", "Keeper", "Builder"] } },
+      "Trapping Tools",
+      "Whetstone & Oil",
+      "Lantern & Oil"
     ],
     "traits": [
       "Speaks rarely; means everything they say.",
