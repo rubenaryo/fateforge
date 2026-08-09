@@ -1,0 +1,78 @@
+{
+  "id": "morkborg",
+  "name": "Mörk Borg",
+  "fields": {
+    "name":  { "type": "pick", "source": "names" },
+    "class": { "type": "pick", "source": "classes" },
+    "abilities": {
+      "type": "group",
+      "children": {
+        "strength": {
+          "type": "lookup", "expr": "3d6 + @class.mods.strength",
+          "table": [
+            { "min": 1, "max": 4, "value": -3 },
+            { "min": 5, "max": 6, "value": -2 },
+            { "min": 7, "max": 8, "value": -1 },
+            { "min": 9, "max": 12, "value": 0 },
+            { "min": 13, "max": 14, "value": 1 },
+            { "min": 15, "max": 16, "value": 2 },
+            { "min": 17, "max": 20, "value": 3 }
+          ]
+        },
+        "agility": {
+          "type": "lookup", "expr": "3d6 + @class.mods.agility",
+          "table": [
+            { "min": 1, "max": 4, "value": -3 },
+            { "min": 5, "max": 6, "value": -2 },
+            { "min": 7, "max": 8, "value": -1 },
+            { "min": 9, "max": 12, "value": 0 },
+            { "min": 13, "max": 14, "value": 1 },
+            { "min": 15, "max": 16, "value": 2 },
+            { "min": 17, "max": 20, "value": 3 }
+          ]
+        },
+        "presence": {
+          "type": "lookup", "expr": "3d6 + @class.mods.presence",
+          "table": [
+            { "min": 1, "max": 4, "value": -3 },
+            { "min": 5, "max": 6, "value": -2 },
+            { "min": 7, "max": 8, "value": -1 },
+            { "min": 9, "max": 12, "value": 0 },
+            { "min": 13, "max": 14, "value": 1 },
+            { "min": 15, "max": 16, "value": 2 },
+            { "min": 17, "max": 20, "value": 3 }
+          ]
+        },
+        "toughness": {
+          "type": "lookup", "expr": "3d6 + @class.mods.toughness",
+          "table": [
+            { "min": 1, "max": 4, "value": -3 },
+            { "min": 5, "max": 6, "value": -2 },
+            { "min": 7, "max": 8, "value": -1 },
+            { "min": 9, "max": 12, "value": 0 },
+            { "min": 13, "max": 14, "value": 1 },
+            { "min": 15, "max": 16, "value": 2 },
+            { "min": 17, "max": 20, "value": 3 }
+          ]
+        }
+      }
+    },
+    "hp":     { "type": "formula", "expr": "max(1, dice(1, @class.hp_die) + @abilities.toughness)" },
+    "omens":  { "type": "formula", "expr": "dice(1, @class.omens_die)" },
+    "silver": { "type": "formula", "expr": "dice(@class.silver_dice, 6) * 10" },
+    "provisions": { "type": "pick", "source": "provisions" },
+    "equipment": {
+      "type": "group",
+      "children": {
+        "container": { "type": "pick", "source": "containers" },
+        "gear":      { "type": "pick", "source": "gear_a" },
+        "more_gear": { "type": "pick", "source": "gear_b" },
+        "weapon":    { "type": "pick", "source": "weapons" },
+        "armor":     { "type": "pick", "source": "armor" }
+      }
+    },
+    "terrible_traits": { "type": "pickMany", "source": "traits", "count": 2 },
+    "broken_body": { "type": "pick", "source": "bodies" },
+    "bad_habit":   { "type": "pick", "source": "habits" }
+  }
+}

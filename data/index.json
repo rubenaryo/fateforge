@@ -2,11 +2,13 @@
   "schemas": [
     "dnd5e.json",
     "scifi.json",
-    "homebrew.json"
+    "homebrew.json",
+    "morkborg.json"
   ],
   "datasets": [
     "dnd5e-srd.json",
     "scifi-core.json",
-    "homebrew-core.json"
+    "homebrew-core.json",
+    "morkborg-core.json"
   ]
 }
